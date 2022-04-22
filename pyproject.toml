@@ -10,9 +10,11 @@ python = "^3.10"
 pyelftools = "^0.28"
 
 [tool.poetry.dev-dependencies]
-black = {version = "^21.12b0", allow-prereleases = true}
+black = {version = "*", allow-prereleases = true}
 pytest = "^7.1.1"
+pytest-black = "^0.3.12"
 pytest-cov = "^3.0.0"
+pytest-flake8 = "^1.1.1"
 
 [tool.poetry.scripts]
 ipchanger = "ipchanger"

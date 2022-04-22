@@ -1,7 +1,6 @@
 import os
 import pathlib
 import tempfile
-from ast import Assert
 
 import pytest
 
