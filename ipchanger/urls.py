@@ -36,27 +36,3 @@ def replace_urls(data: bytearray, replacements: Mapping[bytes, bytes]) -> bytes:
     ), f"URLs configuration is longer than original by {len(urls) - end + start} characters."
 
     return b"".join((data[:start], urls.ljust(end - start, b" "), data[end:]))
-
-
-key_remap = {
-    "tibia_page_url": "tibiaPageUrl",
-    "tibia_store_get_coins_url": "tibiaStoreGetCoinsUrl",
-    "get_premium_url": "getPremiumUrl",
-    "create_account_url": "createAccountUrl",
-    "create_tournament_character_url": "createTournamentCharacterUrl",
-    "access_account_url": "accessAccountUrl",
-    "lost_account_url": "lostAccountUrl",
-    "manual_url": "manualUrl",
-    "faq_url": "faqUrl",
-    "premium_features_url": "premiumFeaturesUrl",
-    "limesurvey_url": "limesurveyUrl",
-    "hints_url": "hintsUrl",
-    "twitch_tibia_url": "twitchTibiaUrl",
-    "youtube_tibia_url": "youTubeTibiaUrl",
-    "crash_report_url": "crashReportUrl",
-    "fps_history_recipient": "fpsHistoryRecipient",
-    "tutorial_progress_web_service": "tutorialProgressWebService",
-    "tournament_details_url": "tournamentDetailsUrl",
-    "login_web_service": "loginWebService",
-    "client_web_service": "clientWebService",
-}

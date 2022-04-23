@@ -18,7 +18,7 @@ pytest-cov = "^3.0.0"
 pytest-flake8 = "^1.1.1"
 
 [tool.poetry.scripts]
-ipchanger = "ipchanger"
+ipchanger = "ipchanger:run"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
