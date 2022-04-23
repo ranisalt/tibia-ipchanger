@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tibia-ipchanger"
-version = "0.1.0"
+version = "0.1.1"
 description = "Command-line IP changer for Tibia clients (Linux only)"
 license = "MIT"
 authors = ["Ranieri Althoff <ranisalt@gmail.com>"]
