@@ -13,7 +13,6 @@ key_remap = {
     "tibia_store_get_coins_url": "tibiaStoreGetCoinsUrl",
     "get_premium_url": "getPremiumUrl",
     "create_account_url": "createAccountUrl",
-    "create_tournament_character_url": "createTournamentCharacterUrl",
     "access_account_url": "accessAccountUrl",
     "lost_account_url": "lostAccountUrl",
     "manual_url": "manualUrl",
@@ -21,14 +20,18 @@ key_remap = {
     "premium_features_url": "premiumFeaturesUrl",
     "limesurvey_url": "limesurveyUrl",
     "hints_url": "hintsUrl",
+    "cipsoft_url": "cipsoftUrl",
     "twitch_tibia_url": "twitchTibiaUrl",
     "youtube_tibia_url": "youTubeTibiaUrl",
     "crash_report_url": "crashReportUrl",
     "fps_history_recipient": "fpsHistoryRecipient",
     "tutorial_progress_web_service": "tutorialProgressWebService",
-    "tournament_details_url": "tournamentDetailsUrl",
+    "wheel_of_destiny_planner_direct_url": "wheelOfDestinyPlannerDirectUrl",
     "login_web_service": "loginWebService",
     "client_web_service": "clientWebService",
+    "account_creation_client_services": "accountCreationClientServices",
+    "account_creation_client_services_recaptcha_v2_content": "accountCreationClientServicesRecaptchaV2Content",
+    "account_creation_client_services_recaptcha_v3_content": "accountCreationClientServicesRecaptchaV3Content",
 }
 
 
