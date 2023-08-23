@@ -58,7 +58,7 @@ def parse_args():
 
 
 def change_client_ip(
-    basedir: pathlib.Path, rsa: bytes, url_replacements: Mapping[str, str]
+    basedir: pathlib.Path, rsa: bytes, url_replacements: Mapping[bytes, bytes]
 ):
     client_path = basedir / "packages" / "Tibia" / "bin" / "client"
     assert client_path.is_file(), f"Could not find client binary in {client_path}."

@@ -13,7 +13,7 @@ def parse_urls(urls: bytes) -> Generator[tuple[bytes, bytes], None, None]:
         yield key, value
 
 
-def replace_urls(data: bytearray, replacements: Mapping[bytes, bytes]) -> bytes:
+def replace_urls(data: bytes, replacements: Mapping[bytes, bytes]) -> bytes:
     """
     >>> urls = b'PREFIX[URLS]\\ntibiaPageUrl=https://www.tibia.com\\nloginWebService=https://www.tibia.com/clientservices/loginservice.php\\nclientWebService=https://www.tibia.com/clientservices/clientservices.php\\n\\n[GRAPHICS]SUFFIX'
     >>> replacements = {b'loginWebService': b'http://127.0.0.1:8000/login.php'}
