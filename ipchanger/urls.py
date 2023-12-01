@@ -1,4 +1,5 @@
 from collections.abc import Generator, Mapping
+import re
 
 
 def parse_urls(urls: bytes) -> Generator[tuple[bytes, bytes], None, None]:
@@ -26,8 +27,16 @@ def replace_urls(data: bytes, replacements: Mapping[bytes, bytes]) -> bytes:
     assert start < end, "Could not find URLs configuration."
 
     urls_section = data[start:end]
+    wildcard = replacements.get(b"wildcard", b"https://www.tibia.com")
     urls = b"\n".join(
-        b"=".join((key, replacements.get(key, value)))
+        b"=".join(
+            (
+                key,
+                replacements.get(
+                    key, value.replace(b"https://www.tibia.com", wildcard)
+                ),
+            )
+        )
         for key, value in parse_urls(urls_section)
     )
 

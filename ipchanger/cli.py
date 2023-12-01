@@ -54,6 +54,8 @@ def parse_args():
     for k in key_remap:
         url_parser.add_argument(f"--{k.replace('_', '-')}")
 
+    url_parser.add_argument("--wildcard", type=partial(bytes, encoding="ascii"))
+
     return parser.parse_args()
 
 

@@ -17,11 +17,11 @@ ipchanger = "ipchanger:run"
 
 [tool.poetry.group.dev.dependencies]
 black = { version = "*", allow-prereleases = true }
-mypy = "^1.5.1"
-pytest = "^7.4.0"
+mypy = "^1.7.1"
+pytest = "^7.4.3"
 pytest-black = "^0.3.12"
 pytest-cov = "^4.1.0"
-ruff = "^0.0.285"
+ruff = "^0.1.6"
 
 [tool.pytest.ini_options]
 addopts = "--cov=ocelot --cov-report=term-missing --doctest-modules"
